@@ -1,0 +1,16 @@
+# Simulink cache
+slprj/
+
+# MATLAB autosave and backup
+*.asv
+*.m~
+
+# Compiled MATLAB files
+*.mexw64
+*.mexw32
+*.mexa64
+*.mexmaci64
+*.p
+
+# Simulink cache
+*.slxc

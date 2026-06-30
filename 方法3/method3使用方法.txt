@@ -1,0 +1,16 @@
+%当模拟完之后复制下面代码
+% 1. 确保从方法三的 To Workspace 导出变量中提取数据
+
+x1_m3 = out.simout3(:, 1); 
+x2_m3 = out.simout3(:, 2); 
+x3_m3 = out.simout3(:, 3); 
+
+% 2. 新开窗口绘制全翡翠绿3D 混沌蝴蝶
+figure;
+
+plot3(x1_m3, x2_m3, x3_m3, 'Color', [0, 0.75, 0.65], 'LineWidth', 1.3); 
+grid on;
+
+% 3. 规范化坐标轴标签
+xlabel('x_1'); ylabel('x_2'); zlabel('x_3');
+title('Lorenz System 3D Phase Plane (Method 3 - Emerald Green)');

@@ -1,0 +1,20 @@
+%当simulink跑完之后在工作空间输入下面代码
+% 1. 清理工作区旧的变量干扰
+clear x1_m5 x2_m5 x3_m5;
+
+% 2. 严格从 out 结构体中提取方法五生成的 3 列矩阵数据
+% 第一列是 x1，第二列是 x2，第三列是 x3
+x1_m5 = out.simout5(:, 1);
+x2_m5 = out.simout5(:, 2);
+x3_m5 = out.simout5(:, 3);
+
+% 3. 新建窗口绘制方法五的黑色蝴蝶
+figure;
+plot3(x1_m5, x2_m5, x3_m5, 'k', 'LineWidth', 1.2); 
+grid on;
+
+% 4. 加上规范的坐标轴和标签
+xlabel('x_1'); 
+ylabel('x_2'); 
+zlabel('x_3');
+title('Lorenz System 3D Phase Plane (Method 5 - S-Function)');
