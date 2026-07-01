@@ -6,3 +6,6 @@
 方法三是Fcn module
 方法四是Matlab function module
 方法五是S-Function
+===========================================
+二编
+已经把库的名字重新改过来了    如果有大佬用了这个垃圾文件欢迎邮箱交流（nikangdaniao@outlook.com）
